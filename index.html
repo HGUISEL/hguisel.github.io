@@ -10,6 +10,33 @@
             box-sizing: border-box;
         }
 
+        .navbar {
+            overflow: hidden;
+            background-color: #444;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .navbar a:hover {
+            background: #ddd;
+            color: black;
+        }
+
+        section {
+            padding: 40px 0 0 0;
+        }
+
         a {
             color: #666666;
         }
@@ -31,6 +58,7 @@
         .main {
             float: left;
             width: 60%;
+            margin-top:60px;
         }
 
         .right {
@@ -65,6 +93,13 @@
 
 <body style="font-family: Sans-serif;color:#666666;margin-left:0px;margin-right:0px;background-color:#efefef">
 
+    <div class="navbar">
+        <a href="#top"><img src="img/ISEL-t.png" height=20px></a>
+        <a href="#intro">Intro</a>
+        <a href="#members">Members</a>
+        <a href="#publications">Publications</a>
+    </div>
+
     <div style="overflow:auto">
         <div class="menu" style="height: 1px;">
             <a href="#"></a>
@@ -81,6 +116,7 @@
                     Handong Global University, Korea</h4>
             </div>
             <div style="margin-left:4px">
+                <section id="intro">
                 <h2>Intro</h2>
                 <p> We, ISELers, study challenging issues in Software Engineeirng,
                     particulary problems related to debugging activities.
@@ -88,7 +124,7 @@
                     inherently helps people all over the world who use various software products. This is a way we
                     serve our neighbours and why we study and learn.
                 </p>
-                <p>Our major apporaches to solve the problems are Artificial Intelligence (AI) and Mining Software
+                <p> Our major apporaches to solve the problems are Artificial Intelligence (AI) and Mining Software
                     Repositories (MSR). By using various techniques based on AI and MSR, we are currently focusing on
                     topics about defect prediction and detection. In addition, we are doing our best to design and
                     implement new software engineering tools by analyzing data mined from software repositories.
@@ -97,13 +133,14 @@
                     We always welcome new members who want to join ISEL (a second-year student wanted)!
                 </p>
                 <!-- <p>ISEL pronounced as [aɪzl]</p>-->
-
+                </section>
                 <h2>Projects</h2>
                 <p>Practical Defect Prediction (Just-in-time Defect Prediction)</p>
                 <p>Improving Bug Detection by Mining Software Repositories</p>
                 <p>Project Jarvis: Programming with Natural Languages</p>
                 <p>Search Engine for Novice IoT Developers</p>
 
+                <section id="members">
                 <h2>Members</h2>
                 <p> JC Nam (98, Mar. '18 -) <a href=https://lifove.github.io target=_blank>https://lifove.github.io</a>
                     <a href=http://lifove.tistory.com/4?category=602850 target=_blank>https://lifove.tistory.com</a>
@@ -117,6 +154,7 @@
                     Yujin Kim (17, Jul. '18 -)<br />
                     Sungbin Lim (17, Mar. '18 -)<br />
                 </p>
+                </section>
 
                 <h3>Incubating Members</h3>
                 <p> Yunho Choi (15), Seokjin Kim (17), and Eunyoung Yang (17)</p>
@@ -132,6 +170,7 @@
                 <h3>Friends</h3>
                 <p>Seun Park (17, Mar. - Jun. '18) and Seonkwon Kim (15, Apr. - May. '18)</p>
 
+                <section id="publications">
                 <h2>Publications</h2>
                 <p>Yunho Choi, Seokjin Kim, Yujin Kim, Hyunwoo Kwon, and Jaechang Nam,
                     <span class=pTitle>Mining Context for Detection Rule Revision of a Static Analysis tool</span>,
@@ -160,6 +199,7 @@
                     on Software Engineering (ICSE2018), Gothenburg, Sweden, May 27 - June 3, 2018. [<a href="https://dl.acm.org/citation.cfm?id=3194987"
                         target=_blank>ACM DL</a>] [<a href="https://feefin.github.io" target=_blank>LINK</a>] [<a href=https://lifove.github.io/files/feefin.pdf
                         target=_blank>PDF</a>]</p>
+                </section>
 
                 <h2>ISEL Photos</h2>
             </div>
